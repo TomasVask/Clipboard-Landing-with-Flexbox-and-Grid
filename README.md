@@ -26,7 +26,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
-![](./Screenshot/_C__Users_tomasv_OneDrive%20-%20Blue%20Bridge_JS_Clipboard%20Landing%20page_index.html (4).png
+![](./Screenshot/_C__Users_tomasv_OneDrive%20-%20Blue%20Bridge_JS_Clipboard%20Landing%20page_index.html (4).png)
 ![](./Screenshot/_C__Users_tomasv_OneDrive%20-%20Blue%20Bridge_JS_Clipboard%20Landing%20page_index.html.png)
 
 ### Links
