@@ -26,13 +26,13 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 
 ### Screenshot
-
-![](./)
+![](./Screenshot/_C__Users_tomasv_OneDrive%20-%20Blue%20Bridge_JS_Clipboard%20Landing%20page_index.html (4).png
+![](./Screenshot/_C__Users_tomasv_OneDrive%20-%20Blue%20Bridge_JS_Clipboard%20Landing%20page_index.html.png)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://tomasvask.github.io/Clipboard-Landing-with-Flexbox-and-Grid/]
 
 ## My process
 
