@@ -1,0 +1,574 @@
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --strong-cyan-hovered: hsl(171, 65%, 56%);
+    --light-blue: hsl(233, 100%, 69%);
+    --light-blue-hovered: hsl(233, 100%, 76%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    --download-ios-button-shadow: 3px 23px 31px -19px var(--strong-cyan), 0px -16px 1px -13px hsl(171, 63%, 37%) inset;
+    --download-mac-button-shadow: 3px 23px 31px -19px var(--light-blue), 0px -16px 1px -13px hsl(233, 62%, 58%) inset;
+}
+
+body {
+    /* width: 100%; */
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 0;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--dark-grayish-blue);
+}
+
+p {
+    color: var(--grayish-blue);
+}
+
+/* ***************** */
+/* main container */
+/* ****************** */
+.main-container {
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-logo {
+    height: 14em;
+    max-width: 7em;
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    margin: 0 auto;
+}
+
+.main-container h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 1.2em;
+}
+
+.main-container p {
+    max-width: 35em;
+    text-align: center;
+    margin-inline: auto;
+    line-height: 1.9em;
+}
+
+button.download {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    padding: 17px 38px;
+    border: 0;
+    color: white;
+    margin: 2em 0.3em;
+
+}
+
+button.download.ios {
+    background-color: var(--strong-cyan);
+    box-shadow: var(--download-ios-button-shadow)
+}
+
+button.download.mac {
+    background-color: var(--light-blue);
+    box-shadow: var(--download-mac-button-shadow)
+}
+
+.download-buttons-top {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+button.download.ios:hover {
+    background-color: var(--strong-cyan-hovered);
+    cursor: pointer;
+}
+
+button.download.mac:hover {
+    background-color: var(--light-blue-hovered);
+    cursor: pointer;
+}
+
+/* ************* */
+/* Feature-1 part */
+/* **************** */
+.feature-1 h2 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5em;
+    margin-top: 3.5em;
+}
+
+.feature-1 .paragraph {
+    max-width: 38em;
+    font-size: 18px;
+    text-align: center;
+    margin-inline: auto;
+    margin-bottom: 4.6em;
+    line-height: 1.9em;
+
+}
+
+/* grid */
+.snippets-flex {
+    display: grid;
+    grid-template-areas:
+        "computer subfeatures";
+    grid-template-columns: 1fr, 1fr;
+}
+
+.image-computer {
+    grid-area: computer;
+}
+
+.snippets-features {
+    grid-area: subfeatures;
+    margin-left: 5.5em;
+    margin-right: 14em;
+    margin-top: 2.2em;
+}
+
+.image-computer {
+    max-width: 104%;
+    margin-left: -2em;
+}
+
+.snippets-features h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.6em;
+}
+
+.snippets-features p {
+    max-width: 22em;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 0em;
+    margin-bottom: 3.5em;
+    line-height: 1.9em;
+}
+
+/* ************* */
+/* Feature-2 part */
+/* **************** */
+.feature-2 h2 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0em;
+    margin-top: 3.5em;
+}
+
+.feature-2 .paragraph {
+    max-width: 38em;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 5.5em;
+    line-height: 1.9em;
+}
+
+.feature-2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.image-device {
+    max-width: 100%;
+}
+
+
+/* ************* */
+/* Feature-3 part */
+/* **************** */
+.feature-3 h2 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0em;
+    margin-top: 3.5em;
+}
+
+.feature-3 .paragraph {
+    max-width: 38em;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 4.5em;
+    margin-inline: auto;
+    line-height: 1.9em;
+}
+
+/* grid */
+
+.feature-3-grid {
+    max-width: 77%;
+    display: grid;
+    grid-template-areas:
+        "logo-1 logo-2 logo-3"
+        "text-1 text-2 text-3";
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 4em;
+    margin-inline: auto;
+    text-align: center;
+    gap: 1.6em;
+    row-gap: 1em;
+}
+
+.image1 {
+    grid-area: logo-1;
+    margin-inline: auto;
+}
+
+.image2 {
+    grid-area: logo-2;
+    margin-inline: auto;
+}
+
+.image3 {
+    grid-area: logo-3;
+    margin-inline: auto;
+}
+
+.feature-3-sub-1 {
+    grid-area: text-1;
+}
+
+.feature-3-sub-2 {
+    grid-area: text-2;
+}
+
+.feature-3-sub-3 {
+    grid-area: text-3;
+}
+
+
+.feature-3-grid h3 {
+    font-size: 1.5rem;
+}
+
+.feature-3-grid p {
+    font-size: 16px;
+    line-height: 1.9em;
+}
+
+/* ********************** */
+/* companies logos */
+/* ********************* */
+.partners {
+    max-width: 85%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 8em auto;
+    align-items: center;
+}
+
+.partners img {
+    margin-inline: auto;
+}
+
+
+/* ********************* */
+/* bottom download section */
+/* ********************* */
+
+.bottom-download h2 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0em;
+    margin-top: 3.5em;
+}
+
+.bottom-download p {
+    max-width: 38em;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-inline: auto;
+    line-height: 1.9em;
+}
+
+.download-buttons-top.bottom {
+    margin-bottom: 6.5em;
+}
+
+/* **************** */
+/* footer section */
+/* **************** */
+footer {
+    background-color: hsla(202, 11%, 66%, 0.1);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: max(25%) 1fr max(35%);
+
+}
+
+.footer-container img {
+    max-width: 3em;
+    margin: 2.2em auto;
+}
+
+.footer-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows: 2em 2em;
+    margin-top: 1.7em;
+}
+
+.footer-menu button {
+    height: 2em;
+    width: 10.2em;
+    border: none;
+    background-color: hsla(202, 11%, 66%, 0);
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    color: var(--dark-grayish-blue);
+}
+
+button.contact:hover {
+    color: var(--strong-cyan);
+    cursor: pointer;
+}
+
+.social-media-icons {
+    margin: 0 auto;
+}
+
+.social-media-icons img {
+    margin: 3em 0.6em;
+}
+
+.twitter:hover {
+    color: var(--strong-cyan);
+    cursor: pointer;
+}
+
+
+.attribution {
+    height: 4em;
+    font-size: 11px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* below 1200px */
+@media(max-width: 75em) {
+    .snippets-features {
+        margin-left: 3.5em;
+        margin-right: 10em;
+        margin-top: 1.5em;
+    }
+
+    .snippets-features p {
+        margin-bottom: 2em;
+    }
+}
+
+/* below 1025 */
+@media(max-width: 64.06em) {
+    .snippets-features {
+        margin-left: 3.5em;
+        margin-right: 7em;
+        margin-top: 0em;
+    }
+}
+
+/* below 1000  */
+@media(max-width: 62.5em) {
+    .snippets-features {
+        margin-left: 2.5em;
+        margin-right: 5em;
+    }
+
+    .partners {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 2em;
+        row-gap: 3em;
+    }
+}
+
+/* below 576 */
+@media(max-width: 36em) {
+    .main-container {
+        background-image: url(./images/bg-header-mobile.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+    }
+
+    .main-container h1 {
+        font-size: 2rem;
+        max-width: 90%;
+        margin: 1.2em auto 0.5em auto;
+    }
+
+    .main-container p {
+        max-width: 87%;
+        font-size: 17px;
+    }
+
+    .download-buttons-top {
+        flex-flow: column;
+        align-items: center;
+        margin: 1.5em auto
+    }
+
+    button.download {
+        padding: 17px 80px;
+        font-size: 17px;
+        border: 0;
+        margin: 0.5em 0.3em;
+    }
+
+    .feature-1 h2 {
+        font-size: 1.9rem;
+    }
+
+    .feature-1 .paragraph {
+        max-width: 87%;
+        font-size: 17px;
+    }
+
+    /* grid */
+    .snippets-flex {
+        display: grid;
+        grid-template-areas:
+            "computer"
+            "subfeatures";
+        grid-template-columns: 1fr;
+    }
+
+    .image-computer {
+        grid-area: computer;
+        max-width: 320px;
+        margin: auto;
+    }
+
+    .snippets-features {
+        grid-area: subfeatures;
+        margin: 2em;
+    }
+
+    .snippets-features h3 {
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+
+    .snippets-features p {
+        max-width: 100%;
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 3em;
+    }
+
+    /* ************* */
+    /* Feature-2 part */
+    /* **************** */
+    .feature-2 h2 {
+        font-size: 1.9rem;
+        margin-top: 2.5em;
+    }
+
+    .feature-2 .paragraph {
+        font-size: 17px;
+        text-align: center;
+        margin: 1.5em;
+        ;
+    }
+
+    .image-device {
+        max-width: 350px;
+    }
+
+    /* ************* */
+    /* Feature-3 part */
+    /* **************** */
+    .feature-3 h2 {
+        font-size: 1.9rem;
+        margin-top: 2.5em;
+    }
+
+    .feature-3 .paragraph {
+        max-width: 87%;
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 4.5em;
+    }
+
+    /* grid */
+
+    .feature-3-grid {
+        max-width: 77%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    /* ********************** */
+    /* companies logos */
+    /* ********************* */
+    .partners {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 7em auto 9em auto;
+        gap: 4em;
+    }
+
+    /* ********************* */
+    /* bottom download section */
+    /* ********************* */
+
+    .bottom-download h2 {
+        font-size: 1.9rem;
+        margin: 0 1em;
+    }
+
+    .bottom-download p {
+        max-width: 87%;
+        font-size: 17px;
+    }
+
+    /* **************** */
+    /* footer section */
+    /* **************** */
+    .footer-container {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .footer-menu {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .footer-menu button {
+        text-align: center;
+        margin: 0.5em auto;
+    }
+
+    .social-media-icons {
+        align-self: center
+    }
+
+}
